@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Verification - ABC Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ABC Technologies</h1>
+            <p>System Verification</p>
+        </header>
+        <section class="configurator">
+            <h2>Select Your System Specifications:</h2>
+            <label for="ram">RAM:</label>
+            <select id="ram">
+                <option value="4">4GB</option>
+                <option value="8">8GB</option>
+                <option value="16">16GB</option>
+            </select>
+            <label for="cpu">CPU Cores:</label>
+            <select id="cpu">
+                <option value="2">2 Cores</option>
+                <option value="4">4 Cores</option>
+                <option value="8">8 Cores</option>
+                <option value="12">12 Cores</option>
+            </select>
+            <button onclick="EvaluateSysInfo()">Submit</button>
+        </section>
+        <section id="results" class="results" style="display: none;">
+            <h3>Compatibility Results:</h3>
+            <div id="software1" class="result">Basic Office Suite: Checking...</div>
+            <div id="software2" class="result">Advanced Design Software: Checking...</div>
+            <div id="software3" class="result">Data Analysis Software: Checking...</div>
+        </section>
+    </div>
+    <script src="details.js"></script>
+</body>
+</html>
